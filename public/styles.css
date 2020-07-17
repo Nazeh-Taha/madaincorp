@@ -1,0 +1,31 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: #7ebeff;
+  
+}
+
+.navbar img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.navbar h1{
+  font-size: 18px;
+    margin: 0;
+    margin-right: 10px;
+}

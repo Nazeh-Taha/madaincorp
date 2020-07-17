@@ -18,29 +18,32 @@ app.use('api/*',req=>{
 
 
 
-app.post('/api/login', function (req, res) {
+app.post('/api/login', function async (req, res) {//add Async/await
 
     if(req.body && req.body.email && req.body.password){
-        if(req.body.email == '123@123.123'){
+        //add another "=" to check the type
+        if(req.body.email === '123@123.123'){//email address should look like the regular email
 
-            if(req.body.password == '123123') {
+            if(req.body.password === '123123') { //password should contain at least 8 characters and one special character at least and one number at least
                 var user ={
                     name:"Alex Jones"
                     , email:req.body.email
-                    , password:req.body.password
+                    // , password:req.body.password -- For safety, the password should not be sent
+                    //   you should create token and send it
                     , profilePic:"http://lorempixel.com/500/500/people/"
                 };
                 res.send(200, user);
             }
             else
-                res.send(400,{message:'hey lady, you sent me the wrong password.'});
+                res.send(400,{message:'wrong password or email'});//send one message for wrong password or email "wrong password or email"
 
         }else
-            res.send(400,{message:'hey man, you sent me the wrong email.'});
+            res.send(400,{message:'wrong password or email'});//send one message for wrong password or email "wrong password or email"
 
     }
     else
-        res.send(422,{message:'yo! you miss`n some stuff!'});
+        res.send(422,{message:'Please fill all required fields'});//Choose a brief and tact message and send it to the user in case of error
+        //it should not reach to the user because he already got an error message from the front end
 });
 
 

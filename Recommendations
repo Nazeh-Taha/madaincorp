@@ -4,10 +4,46 @@ This is a list of recommendations to make this project better
 
 // Please make your recommendations as clear as possible with only a few sentences 
 
-1.
+1. I would have preferred it if it was used React js.
 
-2.
+* for security:
+1. add email and password validation for front and back end.
+2. hashing password and add salt - using jws or passport js.
+3. add a protected route to avoid the unvalidated user to go to user profile using stored token.
+4. send the token with the response for the client and store it using Cookies or local storage.
+5. the password should not be sent to user.
+6. send one message for wrong password or email "wrong password or email".
+7. When changing the password, the old password must be requested.
 
-3.
+* for UI/UX ;
+1. add navbar for user page.
+2. add button to logout.
+3. make profile image smaller and add ability to change it.
+4. add home page with routes.
+5. Choose a brief and proper message and send it to the user in case of error.
 
-4.
+
+* for Performance and Architecture:
+1. separate the HTML pages for all purposes.
+2. add styles folder and files.
+3. minimize profile image size before store it in database.
+4. check the empty input should be in front end before sending the info to server.
+5. add Async/await for API's requests.
+
+*New Feature:
+1. add Register link in home page and log in page.
+2. add "Forgot password?" in login page.
+
+*Bug fix:
+1. change type for email input to "email" and add required 
+
+
+Notes:
+I am not good with Angular But I am very good with React and Node.
+Links to my work:
+https://nazehtaha.herokuapp.com/
+https://covid-19-instant-tracker.herokuapp.com/
+http://nazeh-taha.herokuapp.com/
+https://www.npmjs.com/package/react-responsive-animate-navbar
+
+I have professional business for real clients, but they are confidential
