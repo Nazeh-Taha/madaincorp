@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/DanielHindi/makeMeBetter#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "serve-static": "^1.13.1"
   }
 }
